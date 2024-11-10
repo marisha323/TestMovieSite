@@ -48,7 +48,7 @@ class CastMemberController extends Controller
 
         $castMember = $this->castMemberService->createCastMember($request);
 
-        return redirect()->back()->with('success', 'Учасника касту успішно додано!');
+        return redirect()->route('admin.movies.show', $castMember->movie->id);
     }
 
     /**
