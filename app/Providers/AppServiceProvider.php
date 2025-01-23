@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(ScreenshotService::class, function ($app) {
             return new ScreenshotService();
         });
-    }
+    }//hjhyfytfytfy
 
     /**
      * Bootstrap any application services.
